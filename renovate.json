@@ -12,7 +12,7 @@
   "packageRules": [
     {
       "description": ["Automerge updated patch versions of official actions"],
-      "matchDatasources": ["action"],
+      "matchManagers": ["github-actions"],
       "matchPackagePatterns": ["^actions/"],
       "matchUpdateTypes": ["patch"],
       "automergeStrategy": "squash",
