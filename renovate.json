@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":separateMultipleMajorReleases",
+    ":separateMultipleMinorReleases",
+    ":separatePatchReleases",
+    ":semanticCommitsDisabled",
+    "helpers:pinGitHubActionDigests",
+    "helpers:pinGitHubActionDigestsToSemver"
+  ],
+  "packageRules": [
+    {
+      "description": ["Automerge updated patch versions of official actions"],
+      "matchDatasources": ["action"],
+      "matchPackagePatterns": ["^actions/"],
+      "matchUpdateTypes": ["patch"],
+      "automergeStrategy": "squash",
+      "automerge": true
+    }
+  ]
+}
