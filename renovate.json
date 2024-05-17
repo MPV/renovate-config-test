@@ -13,7 +13,7 @@
     {
       "description": ["Automerge updated patch versions of official actions"],
       "matchDatasources": ["action"],
-      "matchPackagePatterns" ["^actions/"],
+      "matchPackagePatterns": ["^actions/"],
       "matchUpdateTypes": ["patch"],
       "automergeStrategy": "squash",
       "automerge": true
